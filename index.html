@@ -27,7 +27,7 @@
     <section id="profil" class="content-section active">
         <div class="hero">
             <h1>Mamour Ndiaye</h1>
-            <p class="tagline">Étudiant en Informatique | Développeur Logiciel | Réserviste</p>
+            <p class="tagline">Étudiant en Informatique | Développeur Logiciel | AI</p>
             <div class="contact-info">
                 <span><i class="fas fa-map-marker-alt"></i> Montréal, QC</span>
                 <span><i class="fas fa-envelope"></i> mamour.ndiaye@umontreal.ca</span>
@@ -35,7 +35,6 @@
             </div>
             <p class="summary">
                 Informaticien doté d'une solide formation en développement logiciel, IA et cybersécurité.
-                Allie compétences techniques avancées à la rigueur acquise dans les Forces armées canadiennes.
             </p>
             <div class="social-links">
                 <a href="https://github.com/Ilyasukell" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -61,19 +60,27 @@
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Langages</h3>
-                <p>Java, Python, C++, C#, JavaScript, PHP, SQL, Zig, MATLAB</p>
+                <p>Python, Java, C++, C#, JavaScript, PHP, SQL, Dart, HTML, CSS</p>
             </div>
             <div class="skill-category">
-                <h3>IA & Data Science</h3>
-                <p>nnU-Net, Pandas, Scikit-learn, Hugging Face, Optuna</p>
+                <h3>Web</h3>
+                <p>React, Next.js, Flutter, Node.js, Express, REST API</p>
             </div>
             <div class="skill-category">
-                <h3>Web & DevOps</h3>
-                <p>React.js, Next.js, Node.js, TailwindCSS, Docker, AWS, Jenkins</p>
+                <h3>Data & IA</h3>
+                <p>nnU-Net, Pandas, NumPy, Scikit-learn, Matlab</p>
             </div>
             <div class="skill-category">
-                <h3>Cybersécurité</h3>
-                <p>Kali Linux, Wireshark, Protocoles sécurisés, Compliance IT</p>
+                <h3>Bases de données</h3>
+                <p>PostgreSQL, MySQL, MongoDB, Redis</p>
+            </div>
+            <div class="skill-category">
+                <h3>DevOps</h3>
+                <p>Git, Docker, AWS, Jenkins, Microservices</p>
+            </div>
+            <div class="skill-category">
+                <h3>Sécurité</h3>
+                <p>Kali Linux, Wireshark</p>
             </div>
         </div>
     </section>
@@ -87,35 +94,53 @@
             <p class="date">2024</p>
             <ul>
                 <li>Discipline et travail d'équipe sous haute pression.</li>
-                <li>Respect rigoureux des protocoles de sécurité navale.</li>
+                <li>Formation Tech Radar, Cybersécurité en milieu professionnel.</li>
             </ul>
         </div>
     </section>
-
-    # Projets
     <section id="projets" class="content-section">
         <h2>Projets Récents (Clique pour les détails)</h2>
         <div class="projects-grid">
             <div class="card project-card" onclick="openModal('seg')">
                 <h3>Segmentation Médicale 3D</h3>
-                <p>Pipeline via nnU-Net pour segmentation d'atrium.</p>
+                <p>Pipeline nnU-Net pour segmentation du cœur </p>
                 <span class="badge">Python</span> <span class="badge">IA</span>
             </div>
+
             <div class="card project-card" onclick="openModal('maville')">
                 <h3>Application MaVille</h3>
-
-                <p>Gestion de travaux (MVC Java) et tests JaCoCo.</p>
+                <p>Gestion de travaux (MVC Java) et tests unitaires JaCoCo.</p>
                 <span class="badge">Java</span> <span class="badge">Agile</span>
             </div>
+
             <div class="card project-card" onclick="openModal('nhl')">
-                <h3>Analyse NHL</h3>
-                <p>Nettoyage et visualisation avec Pandas/Matplotlib.</p>
-                <span class="badge">Pandas</span> <span class="badge">Analyse</span>
+                <h3>Analyse & Prédiction NHL</h3>
+                <p>Analyse de tirs avec normalisation spatiale et pipeline modulaire.</p>
+                <span class="badge">Python</span> <span class="badge">Data</span>
             </div>
+
             <div class="card project-card" onclick="openModal('web')">
                 <h3>Web Dynamique PHP</h3>
-                <p>Gestion de tuiles interactives avec AJAX.</p>
+                <p>Application CRUD (LAMP) avec AJAX et sécurisation SQL.</p>
                 <span class="badge">PHP</span> <span class="badge">SQL</span>
+            </div>
+
+            <div class="card project-card" onclick="openModal('chevalier')">
+                <h3>Chauvalier | Game Dev</h3>
+                <p>Platformer 2D (Unity/C++) : physique, collisions</p>
+                <span class="badge">C++ / C#</span> <span class="badge">Unity</span>
+            </div>
+
+            <div class="card project-card" onclick="openModal('wilddex')">
+                <h3>WildDex | IA Mobile</h3>
+                <p>Identification via Computer Vision (TFLite) et Microservices.</p>
+                <span class="badge">Flutter</span> <span class="badge">Dart</span>
+            </div>
+
+            <div class="card project-card" onclick="openModal('mern')">
+                <h3>MERN Stack App</h3>
+                <p>API REST sécurisée avec MongoDB et authentification par rôles.</p>
+                <span class="badge">Node.js</span> <span class="badge">React</span>
             </div>
         </div>
     </section>

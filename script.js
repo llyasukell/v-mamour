@@ -1,4 +1,4 @@
-// Fonction pour montrer la section sélectionnée
+
 function showSection(sectionId, event) {
     document.querySelectorAll('.content-section').forEach(section => {
         section.classList.remove('active');
@@ -19,27 +19,38 @@ function showSection(sectionId, event) {
     }
 }
 
-// DONNÉES PROJETS
+
 const projectDetails = {
     seg: {
         title: "Segmentation Médicale 3D",
-        desc: "Ce projet utilise nnU-Net pour segmenter des images médicales 3D de l'atrium. Objectif : faciliter l'analyse médicale avec l'IA."
+        desc: "Pipeline nnU-Net pour la segmentation 3D du cœur (MRI, Medical Decathlon). Inclut le patch training, la data augmentation et la cross-validation avec un objectif de Dice > 0.85."
     },
     maville: {
         title: "Application MaVille",
-        desc: "Application Java MVC pour la gestion de travaux municipaux. Intègre des tests unitaires avec JaCoCo et suit une méthodologie Agile."
+        desc: "Application Java MVC pour la gestion de travaux municipaux assurant une haute maintenabilité. Intègre des tests unitaires avec JUnit/JaCoCo pour renforcer la stabilité logicielle."
     },
     nhl: {
-        title: "Analyse NHL",
-        desc: "Projet d'analyse de données NHL : nettoyage et visualisation avec Pandas et Matplotlib pour détecter des tendances et insights."
+        title: "Analyse & Prédiction NHL",
+        desc: "Analyse de tirs NHL avec normalisation spatiale et pipeline Python modulaire. Modélisation prédictive par cross-validation atteignant 82% de précision et 0.79 de F1-score."
     },
     web: {
         title: "Web Dynamique PHP",
-        desc: "Site web interactif en PHP utilisant AJAX pour la gestion de tuiles dynamiques, avec base de données MySQL pour stockage des données."
+        desc: "Application CRUD (LAMP) avec authentification utilisateur et base MySQL. Utilise des requêtes asynchrones (AJAX/Fetch) et des requêtes préparées contre les injections SQL."
+    },
+    chauvalier: {
+        title: "Chauvalier | Game Development",
+        desc: "Développement d'un jeu vidéo intitulé 'Chauvalier', mettant en scène un chevalier chauve en quête de son honneur perdu. Projet réalisé en C++, C#, Unreal Engine et Unity. Implémentation de systèmes temps réel : collisions, gestion des entrées (input), animations et logique de gameplay."
+    },
+    wilddex: {
+        title: "WildDex | IA Mobile",
+        desc: "Projet collaboratif d'identification d'espèces via Computer Vision (TFLite) en temps réel. Architecture en microservices scalables intégrant une logique anti-fraude."
+    },
+    mern: {
+        title: "MERN Stack Application",
+        desc: "Application Full-Stack avec API REST sécurisée (Node.js, Express, MongoDB). Inclut l'authentification par rôles, le hachage des mots de passe et la validation d'API côté frontend."
     }
 };
 
-// Fonction pour ouvrir le modal avec les détails
 function openModal(projectKey) {
     const modal = document.getElementById('projectModal');
     const title = document.getElementById('modalTitle');
@@ -56,13 +67,12 @@ function openModal(projectKey) {
     modal.classList.add('active');
 }
 
-// Fonction pour fermer le modal
+
 function closeModal() {
     const modal = document.getElementById('projectModal');
     modal.classList.remove('active');
 }
 
-// Fermer le modal si on clique à l'extérieur du contenu
 document.getElementById('projectModal').addEventListener('click', function(e) {
     if (e.target === this) {
         closeModal();
